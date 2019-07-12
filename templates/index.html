@@ -1,0 +1,38 @@
+{% extends 'bootstrap/base.html' %}
+{% block content %}
+<hr>
+<header>
+<div class = 'container' style='background-color: green'>
+  <div class = 'jumbotron'style='background-color: yellow'>
+
+    <h1 style = 'text-centre'>House Price Prediction App </h1>
+    <h2>Usign Machine Learning </h2>
+
+  </div>
+
+</div>
+
+</header>
+
+<div class = 'ml-container' style='background-color: blue'>
+  <div class = 'jumbotron'style='background-color: yellow'>
+
+  <h1 style = 'text-centre'>House Price Prediction App </h1>
+  <h2>Put the Area of the house for the Price to be Predicted:</h2>
+
+  <form action= "{{ url_for('predict')}}" method='POST'>
+    <!-- <textarea name="comment" rows='4' cols='59'></textarea> -->
+    <input type="number" name="to_predict_list" min="1" max="99999999999999">
+    <input type= 'submit' class='btn-info' value='submit'>
+    <!-- <button type ="submit" class="btn btn-primary">
+    </button> -->
+  </form>
+</div>
+
+
+</div>
+
+
+
+
+{% endblock %}

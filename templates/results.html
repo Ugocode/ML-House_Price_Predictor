@@ -1,0 +1,38 @@
+{% extends 'bootstrap/base.html' %}
+{% block content %}
+
+<div class = 'container' style='background-color: green'>
+  <div class = 'jumbotron'style='background-color: yellow'>
+
+    <h1 style = 'text-centre'>House Price Prediction App </h1>
+    <h2>Result </h2>
+
+  </div>
+
+</div>
+
+<div class = 'container' style='background-color: green'>
+<div class = 'container'>
+
+{{ predict }}
+
+  <h1>The Price of the house with {{ result }} Area is:<h1>
+  <h2>  $  {{ prediction }}<h2>
+
+
+
+
+  <!-- <form method='POST' action= "#">
+    <input type='text' name="pricequery">
+    <button type ="submit" class="btn btn-primary">
+    </button>
+  </form> -->
+</div>
+
+
+</div>
+
+
+
+
+{% endblock %}
